@@ -1,0 +1,20 @@
+h1 {
+    color:red;
+}
+
+h2 {
+    color: blue;
+}
+
+a {
+    font-style:italic;
+    font-weight:bold;
+}
+
+section p a {
+    color: green;
+}
+
+blue{
+    color:blue;
+}
