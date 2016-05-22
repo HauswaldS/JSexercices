@@ -1,8 +1,8 @@
 /*Tableau des apprenants*/
 
-var kercodeApp = ["Julien", "Marie", "Abou", "Marine", "Abdou", "Rose", "Jonathan", "Florence", "Killian", "Morgane", "Axel", "Sophie", "Anthony", "William", "Peter", "Charle"];
+var kercodeApp = ["Julien", "Marie", "Abou", "Marine", "Abdou", "Rose", "Jonathan", "Florence", "Killian", "Morgane", "Axel", "Sophie", "Anthony", "Marine", "Peter", "Annabelle", "William", "Charle"];
 /*Second tableau, utilisé pour la comparaison*/
-var kercodeApp2 = ["Julien", "Marie", "Abou3", "Marine", "Abdou", "Rose", "Jonathan", "Florence1", "Killian", "Morgane", "Axel", "Sophie", "Anthony8", "William", "Peter", "Charle"];
+var kercodeApp = ["Julien", "Marie", "Abou", "Marine", "Abdou", "Rose", "6Jonathan", "Florence", "Killian2", "Morgane", "Axel", "Sophie", "5Anthony", "Marine", "Peter", "Annabelle", "William", "4Charle"];
 
 
 /*Fonction qui demande à l'utilisateur d'entrer une valeur. Boucle jusqu'à ce que la valeur ne soit ni undefined/ni empty.*/
@@ -11,7 +11,6 @@ function askValue(where) {
     while (value === undefined || value == "") {
         var value = prompt("Entrez la valeur/string à placer en " + where + " de tableau : ");
     }
-
     return value;
 }
 
@@ -64,3 +63,5 @@ function arrayCompare(ar1, ar2) {
         }
     }
 }
+
+alert(kercodeApp.length);

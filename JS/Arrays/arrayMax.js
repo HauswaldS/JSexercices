@@ -8,4 +8,12 @@ for (i = 0; i < valeurs.length; i++) {
     }
 }
 
-alert(a);
+alert("With my shitty method :" + a);
+
+/*OR*/
+
+var maxValue = valeurs.reduce(function (a, b) {
+    return Math.max(a, b);
+});
+
+alert("With reduce method : " + a);
