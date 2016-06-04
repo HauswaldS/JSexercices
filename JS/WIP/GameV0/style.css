@@ -1,0 +1,49 @@
+html{
+  font-size:16px;
+}
+
+#container {
+  display:flex;
+  justify-content: center;
+  width:100%;
+
+  flex-wrap:wrap;
+}
+
+#container div {
+  min-width:150px;
+  min-height:150px;
+  margin: 1rem 1rem;
+
+  border-radius:100%;
+  background-color:black;
+
+}
+
+#container div img {
+opacity: 0;
+  border-radius:100%;
+}
+
+.active {
+  opacity: 1!important;
+  background-color: red;
+  }
+
+button {
+  display:block;
+
+  width: 100%;
+  min-height:100px;
+
+  background-color:white;
+
+  font-size:30px;
+
+  boder: 2px solid black;
+}
+
+button:hover {
+  color:white;
+  background-color:black;
+}

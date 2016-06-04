@@ -1,0 +1,150 @@
+html {
+    font-size: 16px;
+}
+body {
+    background: url(images/dark_embroidery.png);
+
+    font-family: "Oswald";
+}
+#container {
+    display: flex;
+
+    width: 80%;
+    max-width: 1000px;
+    margin: 5rem auto;
+
+    border-radius: 4px;
+    background: url(images/cream_pixels.png);
+    background-color: white;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#container article {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 2rem;
+
+    border-bottom: 4px black solid;
+    background: url(images/cream_pixels.png);
+
+    justify-content: space-between;
+}
+button {
+    display: block;
+
+    width: 20%;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-left: 1.5rem;
+
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+    background-color: black;
+
+    font-size: 30px;
+}
+button:hover {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    background: url(images/dark_embroidery.png);
+    background-color: black;
+}
+#container article h1 {
+    display: flex;
+
+    width: 80%;
+    margin-bottom: 0;
+    padding-left: 2rem;
+
+    text-transform: uppercase;
+
+    font-size: 4rem;
+
+    justify-content: space-around;
+    ;
+}
+#container article h2 {
+    padding-left: 2rem;
+}
+#container article aside {
+    position: absolute;
+    top: -3rem;
+    right: -2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+
+    text-align: center;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    background: url(images/cream_pixels.png);
+    box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, .5);
+
+    font-size: 1.5rem;
+}
+#container article aside p {
+    margin: 0;
+}
+#container article aside img {
+    display: block;
+
+    max-width: 150px;
+    max-height: 150px;
+    margin: .5rem auto;
+
+    border-radius: 100%;
+}
+#container article aside p {
+    display: block;
+}
+#container div {
+    min-width: 150px;
+    max-height: 150px;
+    margin: 1rem 1rem;
+
+    border: white 2px solid;
+    background: url(images/dark_embroidery.png);
+}
+#container div img {
+    opacity: 0;
+}
+.active {
+    opacity: 1!important;
+}
+
+#won{
+  width:100%;
+  display:none;
+}
+
+#won p {
+  width:50%;
+  margin: 1rem auto;
+  text-align: center;
+  padding:2rem;
+  background-color:#51D605;
+  box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, .5);
+  color:white;
+}
+
+.youwon {
+  display:block!important;
+}
+
+footer {
+  width:100%;
+  background-color:black;
+  color:white;
+  text-align: center;
+  margin-top:2rem;
+}

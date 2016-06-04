@@ -6,7 +6,8 @@ var kercodeApp = ["Julien", "Marie", "Abou", "Marine", "Abdou", "Rose", "Jonatha
 
 var kercodeAppAss = {};
 
-/*Fonction destinée à mélanger les chiffre */
+/*Fonction destinée à mélanger les chiffre*/
+
 function shuffle(a) {
     var j, x, i;
     for (i = a.length; i; i -= 1) {
@@ -29,6 +30,7 @@ function addToAss(arrayToAdd, arrayAss) {
     for (i = 1; i < arrayLength + 1; i++) {
         arrayNumber.push(i);
     }
+
     /*Mélange les nombres*/
 
     shuffle(arrayNumber);
@@ -45,6 +47,10 @@ function addToAss(arrayToAdd, arrayAss) {
     for (value in arrayAss) {
         document.write("<li>" + value + " = n° " + arrayAss[value] + "</li>");
     }
+}
+
+function arrayInOrder(arrayToOrder) {
+
 }
 
 addToAss(kercodeApp, kercodeAppAss);

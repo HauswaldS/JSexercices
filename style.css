@@ -1,20 +1,10 @@
-h1 {
-    color:red;
+#cadre {
+    border: 1px solid red;
 }
 
-h2 {
-    color: blue;
-}
-
-a {
-    font-style:italic;
-    font-weight:bold;
-}
-
-section p a {
-    color: green;
-}
-
-blue{
-    color:blue;
+#bloc {
+    width: 20px;
+    height: 40px;
+    background: red;
+    position: relative; /* Permettra de décaler le bloc */
 }

@@ -1,21 +1,64 @@
-/*Tableau standard des apprenants*/
+function compteur() {
+    let buttonSelector = document.querySelector("button");
+    let secAffichage = document.getElementById("secondes");
+    let secondes = 0;
+    buttonSelector.innerHTML = "ON";
 
-var kercodeApp = ["Julien", "Marie", "Abou", "Marine", "Abdou", "Rose", "Jonathan", "Florence", "Killian", "Morgane", "Axel", "Sophie", "Anthony", "Marine", "Peter", "Annabelle", "William", "Charle"];
+    buttonSelector.addEventListener("click", count);
 
-/*Tableau associatif des apprenants*/
-
-var kercodeApp = {
-    initApp: function (nom, note, abs) {
-        this.nom = nom;
-        this.note = note;
-        this.abs = abs;
+    function count() {
+        let compteurInterval = setInterval(function() {
+            if (buttonSelector.innerHTML === "ON") {
+                secondes++;
+                secAffichage.innerHTML = secondes;
+            }
+            else{
+              clearInterval(compteurInterval);
+              buttonSelector.innerHTML === "ON"
+            }
+        }, 1000);
+        buttonSelector.removeEventListener("click", count);
+        buttonSelector.addEventListener("click", clearIntervals);
     }
-};
 
-function addToArrayAss(arrayToAdd) {
-    var arrayLength = arrayToAdd.length;
-    for (i = 0; i <= arrayLength; i++) {
-        var app(i) = Object.create(kercodeApp);
-        app(i).initApp(arrayToAdd[i], 2, 2);
+
+
+    function clearIntervals() {
+      buttonSelector.removeEventListener("click", clearIntervals);
+        buttonSelector.addEventListener("click", count);
+        buttonSelector.innerHTML = "OFF"
     }
+
+
+
 }
+
+compteur();
+
+
+
+
+// let cadre = document.getElementById("cadre");
+// let cadreWidth = parseFloat(getComputedStyle(cadre).width);
+// let box = document.getElementById("bloc");
+// let boxWidth = parseFloat(getComputedStyle(box).width);
+// let speed = 7;
+// let animationOn = null;
+//
+// function moveBlock() {
+//   let boxLeft = parseFloat(getComputedStyle(box).left);
+//   let end = null
+//
+//   if(boxLeft+boxWidth <= cadreWidth && (end === false || end === null)){
+//     box.style.left = (boxLeft + speed)+"px";
+//     animationOn = requestAnimationFrame(moveBlock);
+//     end = true;
+//   }
+//   else if (end === true){
+//     box.style.left = (boxLeft - speed)+"px";
+//     animationOn = requestAnimationFrame(moveBlock);
+//     end=false;
+//   }
+// }
+//
+// moveBlock();
