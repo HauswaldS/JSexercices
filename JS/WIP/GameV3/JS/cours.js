@@ -249,9 +249,9 @@ CarteInteraction.main();//Launch the best game ever. GOTY 2016 for sure.
 
 
 
+//GAME V02
 
 
-//
 // function addImgToDiv() {
 //     let imageTab = ["images/ane.jpg", "images/chat.jpg", "images/chien.jpg", "images/lama.jpg", "images/lapins.jpg", "images/lionne.jpg",
 //         "images/ours.jpg", "images/ane.jpg", "images/chat.jpg", "images/chien.jpg", "images/lama.jpg", "images/lapins.jpg", "images/lionne.jpg",
