@@ -1,0 +1,180 @@
+@media all and (max-device-width:768px) {
+    footer {
+        background-color: red!important;
+    }
+    .youlost{
+      min-height:200px;
+    }
+
+    .youwon{
+      min-height:200px;
+    }
+}
+html {
+    font-size: 16px;
+}
+body {
+    background: url(images/dark_embroidery.png);
+    font-family: "Oswald";
+}
+#container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    margin: 5rem auto;
+    border-radius: 4px;
+    background: url(images/cream_pixels.png);
+    background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container > aside {
+  width:90%;
+  display:none;
+  color:white!important;
+  text-align: center;
+  font-size:30px;
+}
+
+
+#container article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-bottom: 4px black solid;
+    background: url(images/cream_pixels.png);
+    justify-content: space-between;
+}
+
+#container article h1 {
+    display: flex;
+    width: 80%;
+    margin-bottom: 0;
+    padding-left: 2rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    positon: relative;
+    justify-content: space-around;
+}
+
+#container article small{
+  margin:0 auto;
+}
+
+#container article h2 {
+    padding-left: 2rem;
+}
+#container article h2 p {
+    display: inline;
+    padding-left: 10px;
+    font-size: 2rem;
+}
+#container article aside {
+    position: absolute;
+    top: -3rem;
+    right: -2rem;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: url(images/cream_pixels.png);
+    box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, .5);
+    font-size: 1.5rem;
+}
+#container article aside p {
+    margin: 0;
+}
+#container article aside img {
+    display: block;
+    max-width: 150px;
+    max-height: 150px;
+    margin: .5rem auto;
+    border-radius: 100%;
+}
+#container div  {
+  width:150px;
+  margin: 1rem;
+  background-color:black;
+}
+#container div img {
+    opacity: 0;
+}
+#github {
+    font-size: 12rem;
+    line-height: 0px;
+}
+#github a {
+    transition: all ease .5s;
+    color: red;
+}
+#github a:hover {
+    color: black;
+    cursor:pointer;
+}
+
+.youlost{
+  display:block!important;
+  min-height:400px;
+  background:url(images/YOULOST.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.youwon{
+  display:block!important;
+  min-height:400px;
+  background: url(images/YOUWON.gif);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+    position: relative;
+    display: block;
+    width: 20%;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-left: 1.5rem;
+    transition: all ease .5s;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+    background-color: black;
+    font-size: 30px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: red;
+    ;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    justify-content: space-around;
+}
+
+footer > p > a {
+  color:white!important;
+  text-decoration: none;
+  transition: all ease .5s;
+}
+
+footer > p > a:hover {
+  color:blue!important;
+}
+
+footer >p > a > i {
+  padding-right:.3rem;
+}
